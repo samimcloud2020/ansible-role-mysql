@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+mysql_db role for install mysql.
 
 Requirements
 ------------
@@ -11,6 +11,9 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
+    db_name: employee_db
+    db_user: db_user
+    db_password: Passw0rd  
 A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
 Dependencies
@@ -25,7 +28,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - mysql_db
 
 License
 -------
