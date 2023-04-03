@@ -28,7 +28,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - mysql_db
+         - { mysql_db }
 
 License
 -------
